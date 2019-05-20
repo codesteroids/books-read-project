@@ -1,0 +1,53 @@
+.bookshelf-cat {
+  padding-top: 2rem;
+  
+  .book-item {
+    padding: 1rem 0 0 0;
+    &__image {
+      text-align: center;
+      height: 170px;
+      img {
+       max-height: 160px;
+     }
+    }
+
+    &__description{
+      text-align: center;
+      padding: 1rem;
+      h5 {
+        min-height: 3rem;
+        vertical-align: middle;
+        font-weight: 600;
+        line-height: 1.1;
+      }
+      p {
+        min-height: 4rem;
+      }
+    }
+    
+    &__actions {
+      padding: 0;
+      border-top: none;
+      .bt-details {
+        width: 80%;
+        border: none;
+      }
+      .bt-actions {
+        .uk-dropdown-nav {
+          .uk-active {
+            padding: .5rem 0;
+          }
+        }
+      }
+     
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .bookshelf-cat {
+    > div {
+      padding-left: 10px;
+    }
+  }
+}
