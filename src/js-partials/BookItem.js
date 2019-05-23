@@ -19,7 +19,8 @@ class BookItem extends Component {
             <div className="uk-inline bt-actions">
               <button className="uk-button uk-button-secondary uk-button-small " type="button"><span uk-icon="icon: more-vertical"></span></button>
               <div 
-                uk-dropdown="pos: bottom-justify; mode: click; animation: uk-animation-slide-bottom-small; duration: 300"
+                uk-dropdown="pos: top-right; mode: click; animation: uk-animation-slide-bottom-small; duration: 300"
+                className="uk-background-muted"
               >
                   <ul className="uk-nav uk-dropdown-nav">
                       <li class="uk-nav-header uk-text-secondary">CATEGORIES</li>

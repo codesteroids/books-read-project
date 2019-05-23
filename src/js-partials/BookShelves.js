@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BookStand from '../images/BookStand.svg';
 import BookShelf from './BookShelf';
-import {BrowserRouter, Route, Link}  from 'react-router-dom';
+import {Link}  from 'react-router-dom';
 import * as BooksAPI from './BooksAPI';
 import * as Utils from './Utils';
 
@@ -10,11 +10,11 @@ import * as Utils from './Utils';
 const Header = () => {
   return (
     <div className="uk-container">
-      <div className="uk-grid uk-text-center">
-        <div className="uk-width-auto@m">
+      <div className="uk-grid uk-flex uk-flex-center uk-text-center uk-text-left@m">
+        <div className="uk-width-1-1 uk-width-auto@m">
           <img src={BookStand}  title="My Books App" width="120" alt="My Books App" />
         </div>
-        <div className="uk-width-expand@m">
+        <div className="">
           <h2 className="uk-heading-small uk-text-primary">My Read Books App</h2>
           <p className="uk-text-lead uk-margin-medium-left">All the books I like in one place</p>
         </div>
@@ -84,6 +84,12 @@ class BookShelves extends Component {
               </ul> 
           </div>
         </div>
+        <Link 
+          to="/add-book" 
+          className="uk-button uk-button-primary uk-button-large uk-position-bottom-right uk-padding-small uk-position-fixed uk-position-small"
+        >
+          <span uk-icon="icon: plus; ratio: 2"></span>
+        </Link>
       </div>
     )
   }
